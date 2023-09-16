@@ -1,0 +1,52 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-img {
+  width: 100%;
+}
+
+.article-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 2rem 0rem;
+}
+
+.article-heading {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
+.article-paragraph {    
+  font-family: Monument Grotesk Semi Mono,Monaco,Courier,monospace;
+  color: var(--color-hover);
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 850px) {
+  .article {
+    margin: 0;
+  }
+  .article-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .article-container {
+    padding: 0rem;
+  }
+}

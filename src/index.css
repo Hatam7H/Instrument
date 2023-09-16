@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: Whyte Book,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,"sans-serif";;
+  --color-black : #000;
+  --color-white : #fff;
+  --color-bg: #181818;
+  --color-hover: #a3a3a3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section-btn {
+  font-family:  Monument Grotesk Semi Mono,Monaco,Courier,monospace;
+  color: var(--color-black);
+  font-size: 15px;  
+  border-radius: 10rem;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  transition: .5s;
+}
+.section-btn:hover {
+  background-color: var(--color-hover);
+}
+
+.row_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.section-heading {  
+  color: var(--color-white);
+  font-size: 45px;  
+  font-weight: 500;
+  cursor: default;
+  text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+  .section-heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .section-heading {
+    font-size: 30px;
+  }
+  .section-heading br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .section-heading {
+    font-size: 20px;
+  }
 }

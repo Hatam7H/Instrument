@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.navbar-logo {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.navbar-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar a {
+  font-family:  Monument Grotesk Semi Mono,Monaco,Courier,monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-white);
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: var(--color-hover);
+}
+
+.navbar-icon {  
+  display: none;
+  position: relative;
+}
+
+
+
+.navbar-sm {    
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-black);
+  transition: 0.5s ease;
+  z-index: 5;
+  padding: 2rem 3rem;
+}
+
+.navbar-logo-sm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-sm-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 3rem;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 2rem 1.5rem;
+  }
+  .navbar-sm {
+    padding: 2rem 1.5rem;
+  }
+  .navbar-icon {
+    display: flex;
+  }
+  .navbar-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .navbar {
+    padding: 2rem .5rem;
+  }
+  .navbar-sm {
+    padding: 2rem .5rem;
+  }
+}

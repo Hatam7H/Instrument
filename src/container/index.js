@@ -1,0 +1,6 @@
+export{ default as Header } from './header/Header'
+export{ default as Intro } from './intro/Intro'
+export{ default as Who } from './who/Who'
+export{ default as Carrers } from './carrers/Carrers'
+export{ default as Companies } from './companies/Companies'
+export{ default as Footers } from './footers/Footers'

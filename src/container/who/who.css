@@ -1,0 +1,16 @@
+.who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10rem 0rem;
+  padding: 0rem 5rem;
+  gap: 5rem;
+}
+
+@media  screen and (max-width: 400px) {
+  .who {
+    padding: 0rem .5rem;
+  }
+}

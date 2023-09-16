@@ -1,0 +1,24 @@
+.companies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10rem 0rem;
+}
+
+.companies-container img {
+  width: 250px;
+}
+
+@media screen and (max-width: 850px){
+  .companies-container img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .companies-container img {
+    width: 150px;
+  }
+}

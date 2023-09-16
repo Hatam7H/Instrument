@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 0rem 5rem;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card-img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.card-paragraph {
+  font-family: var(--font-family);  
+  color: var(--color-hover);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1050px){
+  .card {
+    padding: 0rem 0rem;
+  }
+  .card-paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .card-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-paragraph {
+    font-size: 14px;
+  }
+  
+}
