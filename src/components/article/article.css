@@ -3,10 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .article-img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .article-container {
@@ -37,6 +39,7 @@
 @media screen and (max-width: 850px) {
   .article {
     margin: 0;
+    width: 100%;
   }
   .article-container {
     flex-direction: column;
